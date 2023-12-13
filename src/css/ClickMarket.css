@@ -14,6 +14,7 @@ header {
     background-color: rgb(20, 17, 17);
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.473);
 }
@@ -35,7 +36,6 @@ nav {
 
 ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -173,7 +173,6 @@ h2 {
 
 .mercadoria {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .imagem2 {
@@ -200,7 +199,7 @@ h2 {
 }
 
 .botao2 {
-    width: 400px;
+    width: 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
