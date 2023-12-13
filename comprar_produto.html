@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/ClickMarket.css">
+
+    <title>ClickMarket</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>ClickMarket</h1>
+        </a>
+        
+        <nav>
+            <ul>
+                <li>Pagina Principal</li>
+                <li>Categorias</li>
+                <li>Contate-me</li>
+                <li>Login/Cadastro</li>
+                <li>Carrinho</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div id="produto" class="visualizar">
+
+        </div>
+
+        <div class="entrega">
+            <h5 class="titulo2">Informe seu endereço</h5>
+
+            <form method="get" action=".">
+                <label>CEP:
+                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                        onblur="pesquisacep(this.value);" /></label><br />
+                <label>Rua:
+                    <input name="rua" type="text" id="rua" size="60" /></label><br />
+                <label>Bairro:
+                    <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+                <label>Cidade:
+                    <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+                <label>Estado:
+                    <input name="uf" type="text" id="uf" size="2" /></label><br />
+            </form>
+
+            <div class="botao3">
+                <button onclick="finalizarCompra()" class="botoes2">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="esconder"></div>
+
+    <div id="sucesso" class="gastar">
+        <img class="verificar" src="imagens-CM/verificacao.jpg" alt="">
+        <div>
+            <h4 class="titulo3">Compra realizada com sucesso</h4>
+        </div>
+    </div>
+
+
+    <footer>
+        <h5 class="rodape"> &copy; 2023 ClickMarket. Todos os direitos reservados. </h5>
+    </footer>
+
+    <script src="src/js/ClickMarket.js"></script>
+</body>
+
+</html>
